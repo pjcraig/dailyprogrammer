@@ -4,9 +4,7 @@ puts "Enter the phrase: "
 phrase = gets.chomp
 phrase = phrase.downcase
 
-passage = ''
-
-act, scene, speaker = ''
+passage, act, scene, speaker = ''
 
 file.each_line do |line|
     if line == "\n" and passage.downcase.include? phrase
